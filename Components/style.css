@@ -1,0 +1,241 @@
+/* ========== GLOBAL RESET ========== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f0fff4;
+    overflow-x: hidden;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #2e7d32, #66bb6a);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* LOGO SECTION */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+}
+
+.navbar-logo-img {
+    height: 60px;
+    /* Increased from 40px to 60px */
+    margin-left: 0.5rem;
+}
+
+/* NAV LINKS */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-links a:hover {
+    opacity: 0.8;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e8f5e9;
+    /* Optional light green background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Stack quote + what-we-do vertically */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+    padding: 2rem 0;
+    /* Removed horizontal padding */
+    width: 100vw;
+    /* Full viewport width */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== QUOTE SECTION ========== */
+.quote-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 0;
+    /* Remove rounding if you want full edge */
+    margin: 0;
+}
+
+.quote-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    border-radius: 0;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.quote-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.quote-side-img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quote-text-block {
+    max-width: 400px;
+}
+
+.quote-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.quote-sub {
+    font-size: 1rem;
+    color: #c8e6c9;
+}
+
+/* ========== WHAT WE DO SECTION ========== */
+.what-we-do {
+    width: 100%;
+    background-color: #f1f8e9;
+    border-radius: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.what-we-do-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.what-we-do-text {
+    text-align: center;
+}
+
+.what-we-do-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #2e7d32;
+}
+
+.what-we-do-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Spacer between navbar and content */
+.spacer {
+    height: 80px;
+}
+
+/* ========== PREDICTION SECTION ========== */
+.prediction-container {
+    background: white;
+    margin: 03rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prediction-container input[type="file"] {
+    margin: 1rem 0;
+}
+
+.prediction-container button {
+    padding: 10px 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.prediction-container button:hover {
+    background-color: #2e7d32;
+}
+
+/* ========== PREVIEW IMAGE ========== */
+.prediction-image-preview img {
+    margin-top: 1rem;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    border: 2px solid #c8e6c9;
+}
+
+/* ========== RESULT BOX ========== */
+.prediction-result-box {
+    margin-top: 2rem;
+    background-color: #e8f5e9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-image {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #a5d6a7;
+}
